@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
+/*  background-color: navy;*/
+  color: purple;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 2rem;
+  padding: 0 1rem;
+  font-family: cursive;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+    margin: 1;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
 }
+
+.cover {
+    background-color: white;
+    width: 70%;
+    height: 50%;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input {
+    border: none;
+    background-color: rgb(229, 226, 226);
+    width: 60%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+    font-size: 1em;
+}
+
+input:focus {
+    outline-color: rgb(32, 177, 255);
+}
+
+.login-btn {
+    width: 40%;
+    height: 3em;
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+    color: white;
+}
+
+.login-btn:hover { transform: scale(1.25);}
+
+.text {
+    position: relative;
+    bottom: 0.5%;
+}
+
+h1 {
+  color: purple;
+}
+
